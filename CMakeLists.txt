@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(or_ompl)
 
 include(CheckCXXSourceCompiles)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/CMakeModules/")
 
 find_package(catkin REQUIRED cmake_modules openrave_catkin)
 find_package(Boost REQUIRED COMPONENTS chrono system)
